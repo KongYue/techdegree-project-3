@@ -1,0 +1,126 @@
+
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  line-height: 1.5;
+  color: #3a3a3a;
+}
+fieldset {
+  border: none;
+}
+footer {
+  text-align: center;
+  font-style: italic;
+  font-size: small;
+}
+
+.container {
+ text-align: center;
+}
+.main_header h1 {
+  background-color: darkslategrey;
+  margin-top: 0;
+  color: white;
+}
+.brief {
+  border-bottom: solid 3px black;
+  width: 95%;
+  margin: 1px auto;
+}
+
+/* About Form */
+.form {
+  width: 95%;
+  margin: auto;
+  border-top: solid 2px black;
+}
+.contact_info {
+  border-bottom: solid 2px black;
+}
+.contact_info input,select{
+  background: lightgrey;
+  width: 100%;
+  transition: width 2s;
+   -webkit-transition: width 2s;
+}
+.contact_list input:hover {
+ border: solid 2px black;
+}
+.contact_list input:focus{
+ width: 90%;
+}
+.state select:hover {
+ border: solid 2px black;
+}
+
+.comment_area:hover {
+  border: solid 2px black;
+}
+.zipcode input {
+  width: 50%;
+}
+
+ .comment_area {
+  background: lightgrey;
+  min-height: 50px;
+  width: 100%;
+  max-width: 768px;
+}
+.button button {
+  width: 100%;
+  background: lightgreen;
+  padding: 9px 0;
+}
+
+.copyright{
+  margin: 2px auto;
+}
+
+
+
+@media (min-width: 768px) {
+ .brief {
+   width: 70%;
+}
+
+  .form {
+    width: 70%;
+    margin: auto;
+    border-top: solid 1px black;
+  }
+
+ .contact_list {
+  display: flex;
+  justify-content: space-between;
+ margin-bottom: 5px;
+}
+
+.contact_list input, select{
+  width: 70%;
+}
+.contact_list label{
+  width: 30%;
+}
+.zipcode {
+  justify-content: flex-start;
+}
+.zipcode input {
+width: 30%;
+}
+/* .content_info lable, input, select {
+  display: inline-block;
+}
+.contact_info lable {
+  text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
+} */
+
+}
