@@ -20,10 +20,10 @@
   </div>
   <form class="form" action="index.html" method="post">
     <fieldset class="formlist contact_info">
-      <legend><h2>Contact Information</h2></legend>
+      <legend class="section_title">Contact Information</legend>
       <div class="contact_list fullname">
         <label for="fullname">Full Name</label><br>
-        <input type="text" id="fullname" name="user_name" placeholder="Required">
+        <input type="text" id="fullname" name="user_name" placeholder="Required" required>
       </div>
       <div class="contact_list email">
         <label for="email">Email Address</label><br>
@@ -56,19 +56,19 @@
       <div class="contact_list zipcode">
         <label for="zipcode">Zip Code</label><br>
         <input type="number" id="zipcode" name="user_address_zipcode" value="" placeholder="2000">
+      </div>
       </fieldset>
-    </div>
     <fieldset class="formlist newsletter">
-      <legend> <h2>Newsletter</h2><p>Select the newsletters you would like to receive</p>
-      </legend>
+      <legend class="section_title"> Newsletter </legend>
+      <p>Select the newsletters you would like to receive</p>
       <input type="checkbox" id="htmlnews" name="htmlnews" value="htmlnews"><label for="htmlnews">HTML News</label><br>
       <input type="checkbox" id="cssnews" name="cssnews" value="cssnews"><label for="cssnews">CSS News</label><br>
       <input type="checkbox" id="javascriptnews" name="javascriptnews" value="javascriptnews"><label for="javascriptnews">Javascript News</label><br>
-      <label for="newsletter_format">Newsletter format</label><br>
+      <label for="html">Newsletter format</label><br>
       <input type="radio" id="html" name="newsletter_format" value="html"><label for="html">HTML</label><br>
       <input type="radio" id="plaintext" name="newsletter_format" value="plaintext"><label for="plaintext">Plain Text</label><br>
       <label for="other_topics">Other topics you'd like to hear about</label><br>
-      <textarea name="other_topics"class="comment_area" id="other_topics" rows="8" cols="80"></textarea><br>
+      <textarea name="other_topics" class="comment_area" id="other_topics" rows="8" cols="80"></textarea><br>
     </fieldset>
     <fieldset class="formlist button">
       <button type="submit" name="button">Sign Up</button>

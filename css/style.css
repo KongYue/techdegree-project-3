@@ -35,10 +35,16 @@ footer {
 }
 
 /* About Form */
+.section_title {
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 15px;
+}
 .form {
   width: 95%;
   margin: auto;
   border-top: solid 2px black;
+  background-color: aliceblue;
 }
 .contact_info {
   border-bottom: solid 2px black;
@@ -56,7 +62,7 @@ footer {
  width: 90%;
 }
 .state select:hover {
- border: solid 2px black;
+ border: solid 1px black;
 }
 
 .comment_area:hover {
